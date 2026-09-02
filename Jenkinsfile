@@ -11,14 +11,14 @@ pipeline {
             }
             steps {
                 sh 
-                ''''
+                '''
                     ls -al
                     node --vesrion
                     npm --version
                     npm ci
                     npm run build
                     ls -a
-                ''''
+                '''
                 
             }
         }
