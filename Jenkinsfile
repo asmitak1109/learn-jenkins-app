@@ -13,7 +13,7 @@ pipeline {
                 sh '''
                 
                     ls -la   #List all files
-                    node --vesrion    #Only for checking purpose not mandatory
+                    node --version    #Only for checking purpose not mandatory
                     npm --version  #Only for checking purpose not mandatory 
                     npm ci
                     npm run build
