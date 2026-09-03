@@ -11,7 +11,7 @@ pipeline {
             }
             steps {
                 sh '''
-                    echo 'Asmita's build'
+                    echo "Asmita's build"
                     ls -la   #List all files
                     node --version    #Only for checking purpose not mandatory
                     npm --version  #Only for checking purpose not mandatory 
