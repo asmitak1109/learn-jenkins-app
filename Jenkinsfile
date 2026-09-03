@@ -44,8 +44,8 @@ pipeline {
             junit 'test-results/junit.xml'
         }
        
-    }
-    post {
+    
+    
     failure {
         emailext(
             to: 'korbuasmita@gmail.com',
@@ -53,5 +53,6 @@ pipeline {
             body: 'Please check the Jenkins build.'
         )
     }
+
 }
 }
