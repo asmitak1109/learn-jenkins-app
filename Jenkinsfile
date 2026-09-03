@@ -45,4 +45,13 @@ pipeline {
         }
        
     }
+    post {
+    failure {
+        emailext(
+            to: 'korbuasmita@gmail.com',
+            subject: 'Build Failed',
+            body: 'Please check the Jenkins build.'
+        )
+    }
+}
 }
